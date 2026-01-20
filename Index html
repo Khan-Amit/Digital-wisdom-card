@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom Cards | Resilience Quotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-seedling"></i> Wisdom Cards</h1>
+            <p class="subtitle">Digital inspiration for resilient souls</p>
+            <div class="creator-badge">
+                <i class="fas fa-user-shield"></i>
+                Created with protective energy
+            </div>
+        </header>
+
+        <!-- Main Card Display -->
+        <main class="main-content">
+            <div class="card active" id="main-card">
+                <div class="card-header">
+                    <span class="card-number">#001</span>
+                    <span class="card-category">Resilience</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="quote" id="current-quote">
+                        "The bamboo that bends is stronger than the oak that resists."
+                    </h2>
+                    <p class="author" id="current-author">— Japanese Proverb</p>
+                    <div class="explanation" id="current-explanation">
+                        Flexibility in hardship creates unbreakable strength. Like bamboo in storm, bend but don't break.
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="wisdom-level">
+                        <i class="fas fa-brain"></i> Inner Strength
+                    </div>
+                    <div class="share-option">
+                        <i class="fas fa-share-alt"></i> Spread this wisdom
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="controls">
+                <button class="btn" id="prev-btn">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button class="btn primary" id="random-btn">
+                    <i class="fas fa-random"></i> Random Wisdom
+                </button>
+                <button class="btn" id="next-btn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    Card <span id="current-card">1</span> of <span id="total-cards">12</span>
+                </div>
+            </div>
+
+            <!-- Mini Cards Preview -->
+            <div class="mini-cards">
+                <div class="mini-card" data-index="0">
+                    <div class="mini-quote">Bamboo strength...</div>
+                </div>
+                <div class="mini-card" data-index="1">
+                    <div class="mini-quote">Hokusai's wave...</div>
+                </div>
+                <div class="mini-card" data-index="2">
+                    <div class="mini-quote">Phoenix rise...</div>
+                </div>
+                <!-- More will be added by JavaScript -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="mission">
+                    <h3><i class="fas fa-heart"></i> Mission</h3>
+                    <p>Creating digital tools that inspire without harming, teach without taking, and spread light without burning.</p>
+                </div>
+                <div class="creator-info">
+                    <h3><i class="fas fa-user-ninja"></i> Creator's Note</h3>
+                    <p>This code is open to learn from, safe to share, and designed with protective energy. Take what helps, leave what doesn't.</p>
+                    <div class="security-badge">
+                        <i class="fas fa-shield-alt"></i> Ethically Coded | No Tracking | Client-Side Only
+                    </div>
+                </div>
+                <div class="github-link">
+                    <h3><i class="fab fa-github"></i> Learning Journey</h3>
+                    <p>Part of my GitHub learning path. This project teaches: HTML5, CSS3, JavaScript, Responsive Design, and Ethical Coding.</p>
+                    <a href="#" class="github-btn" id="fake-github-btn">
+                        <i class="fab fa-github"></i> View Source (Coming Soon)
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Made with <i class="fas fa-hand-holding-heart"></i> by a resilient soul | 2024</p>
+                <p class="tagline">Code that heals, not harms</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
